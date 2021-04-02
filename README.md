@@ -1,6 +1,11 @@
-# The ANZ Virtual Experience Repo
-
-Data dictionary
+---
+Version: 1.0
+Author: Isaac Kar Wai Low
+Title: Virtual Internship - Data@ANZ
+Link: https://www.theforage.com/virtual-internships/prototype/ZLJCsrpkHo9pZBJNY/Data%40ANZ%20Program
+DateTimeCreated: 03/04/2021 2:44 AM
+---
+# Virtual Internship Project: ANZ Data@ANZ Program Repo
 
 1) status
 - bool
