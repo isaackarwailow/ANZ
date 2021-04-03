@@ -22,7 +22,7 @@ DateTimeCreated: 03/04/2021 2:44 AM
 | card_present_cat  | 1, 0                                                      | category  |            |
 | age               | years                                                     | int       | 32         |
 | gender            | M, F                                                      | category  |            |
-| txn_description   | POS,SALES-POS,PAYMENT,INTER<br>BANK,PAY,SALARY,PHONE BANK | category  |            |
+| txn_description   | POS,SALES-POS,PAYMENT,INTER<br>BANK,PAY/SALARY,PHONE BANK | category  |            |
 | balance           | numeric                                                   | float     | 64         |
 | amount            | numeric                                                   | float     | 64         |
 | geometry          | string                                                    | object    |            |
