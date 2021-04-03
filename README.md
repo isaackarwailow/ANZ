@@ -5,7 +5,50 @@ Title: Virtual Internship - Data@ANZ
 Link: https://www.theforage.com/virtual-internships/prototype/ZLJCsrpkHo9pZBJNY/Data%40ANZ%20Program
 DateTimeCreated: 03/04/2021 2:44 AM
 ---
-# Virtual Internship Project: ANZ Data@ANZ Program Repo
+# ANZ Virtual Internship Project: Data@ANZ
+## Technology Used
+* Jupyter notebooks
+* Anaconda
+* Python 3.8.5
+
+## Data dictionary
+
+| Field Name        | Legal Values                                              | Data Type | Field Size |
+|-------------------|-----------------------------------------------------------|-----------|------------|
+| timestamp         | '%Y-%m-%d %H:%M:%S'                                       | datetime  | 64         |
+| date              | '%m-%d-%Y                                                 | date      | 64         |
+| status            | authorized/ posted                                        | category  |            |
+| card_present_bool | True, False                                               | bool      | 32         |
+| card_present_cat  | 1, 0                                                      | category  |            |
+| age               | years                                                     | int       | 32         |
+| gender            | M, F                                                      | category  |            |
+| txn_description   | POS,SALES-POS,PAYMENT,INTER<br>BANK,PAY,SALARY,PHONE BANK | category  |            |
+| balance           | numeric                                                   | float     | 64         |
+| amount            | numeric                                                   | float     | 64         |
+| geometry          | string                                                    | object    |            |
+| long              | range: -180, 180                                          | float     | 64         |
+| lat               | range: -90, 90                                            | float     | 64         |
+| merch_suburb      | string                                                    | object    |            |
+| merch_state       | string                                                    | object    |            |
+| merch_geometry    | string                                                    | object    |            |
+| merch_long        | range: -180, 180                                          | float     | 64         |
+| merch_lat         | range: -90, 90                                            | float     | 64         |
+
+## Guide
+1. Load the transaction dataset below into an analysis tool of your choice (Excel, R, SAS, Tableau, or similar)
+- I chose Jupyter Notebooks and Python 3.8.5, loading the dataset as a csv file into the notebook via pandas library read_csv method.
+2. Start by doing some basic checks – are there any data issues? Does the data need to be cleaned?
+- I made a data dictionary in order to make the values to be easily indexed. For example, card_present can be thought of as a Boolean value so a new column was made using 1 and 0 as a guide.
+    -   **Data types**
+        - *timestamp*: timestamp is fornmatted to the precision of seconds so a datetime64 would suffice
+        - 
+    - **Missing Values**
+        - *card_present*: empty values are equivalent to a False status, so missing values are replaced with bools
+- 
+3. Gather some interesting overall insights about the data. For example -- what is the average transaction amount? How many transactions do customers make each month, on average?
+4. Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
+5. For a challenge – what insights can you draw from the location information provided in the dataset?
+6. Put together 2-3 slides summarising your most interesting findings to ANZ management.
 
 1) status
 - bool
@@ -15,7 +58,7 @@ DateTimeCreated: 03/04/2021 2:44 AM
 - This makes sense since pending transactions are usually cash payments, bank transfers or corporate transactions
 
 2) card_present_flag
-- types of data: 1, 0, and NULL
+- types of data: 1, 0
 - Note: The null value violates 2NF (2nd Normal Form) due to it being a non-prime attribute being functionally dependent on status. If this value is normalized, it will also make status bool redundant
 
 3) bpay_biller_code
