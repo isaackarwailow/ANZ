@@ -56,7 +56,7 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Preliminary Data Preperation
 
-3. Gather some interesting overall insights about the data. For example -- what is the average transaction amount? How many transactions do customers make each month, on average? 
+3.  How many transactions do customers make each month, on average? 
 
 Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
 
