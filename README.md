@@ -2,7 +2,7 @@
 Version: 1.0
 Author: Isaac Kar Wai Low
 Title: ANZ Virtual Internship Project: Data@ANZ
-Link: ![Virtual Internship portal](https://www.theforage.com/virtual-internships/prototype/ZLJCsrpkHo9pZBJNY/Data%40ANZ%20Program)
+Link: https://www.theforage.com/virtual-internships/prototype/ZLJCsrpkHo9pZBJNY/Data%40ANZ%20Program
 DateTimeCreated: 03/04/2021 2:44 AM
 ---
 ## Summary
