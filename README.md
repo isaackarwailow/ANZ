@@ -56,43 +56,9 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Preliminary Data Preperation
 
-* A data dictionary is important in order to be able to index data properly onto a graph.
-  * **Data types**
-    * *timestamp*:
-      * use DatetimeIndex attributes to reference specific periods. For example:
+3. Gather some interesting overall insights about the data. For example -- what is the average transaction amount? How many transactions do customers make each month, on average? 
 
-      ```Python
-      # month
-      df.index.month
-      # date
-      df.index.strftime('%m/%d/%Y')
-      # day name
-      df.index.day_name()
-      # time
-      df.index.strftime('%H:%M')
-      # Segment by monthly period
-      df.index.to_period('M')
-      ```
-
-    * *status:*
-      * Authorized: purchase for which the merchant has received approval from the bank that issued the customer's payment card
-      * Posted: purchases that have cleared on your card and the funds have been deducted. Note that 'posted' has multi-transitive dependencies with missing values that violate 3rd Normalization Form (3NF). The option of row removal was considered. However, since time series analysis was the priority for this EDA, the rows were kept.
-    * *card_present_cat*
-      * Converted to category data type for efficient parsing
-    * *card_present_bool*
-      * A created Boolean column from card_present_cat data
-      * flag to identify whether a physical card was authorized for the transaction
-    * *gender*
-      * Converted to int32
-    * *txn_description*
-      * Converted to category data type for more efficient parsing
-  * **Missing Values**
-    * *card_present_bools*
-      * empty values are equivalent to a False status, so missing values are replaced with bools
-
-2. Gather some interesting overall insights about the data. For example -- what is the average transaction amount? How many transactions do customers make each month, on average?
-
-4. Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
+Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
 
 5. For a challenge – what insights can you draw from the location information provided in the dataset?
 
