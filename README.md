@@ -36,7 +36,7 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 | Field Name        | Legal Values                                                   | Data Type | Field Size |
 |-------------------|----------------------------------------------------------------|-----------|------------|
 | timestamp         | '%Y-%m-%d %H:%M:%S'                                            | datetime  | 64         |
-| date              | '%m-%d-%Y'                                                     | date      | 64         |
+| date              | '%m/%d/%Y'                                                     | datetime      | 64         |
 | status            | authorized/ posted                                             | category  |            |
 | card_present_bool | True, False                                                    | bool      | 32         |
 | card_present_cat  | 1, 0                                                           | category  |            |
@@ -56,9 +56,7 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Preliminary Data Preperation
 
-3.  How many transactions do customers make each month, on average? 
-
-Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
+3. Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
 
 5. For a challenge – what insights can you draw from the location information provided in the dataset?
 
