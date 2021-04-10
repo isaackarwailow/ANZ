@@ -56,8 +56,4 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Preliminary Data Preperation
 
-3. Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
-
-5. For a challenge – what insights can you draw from the location information provided in the dataset?
-
-6. Put together 2-3 slides summarising your most interesting findings to ANZ management.
+* Put together 2-3 slides summarising your most interesting findings to ANZ management.
