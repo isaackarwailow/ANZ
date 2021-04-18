@@ -1,4 +1,4 @@
-﻿timestamp,status,card_present_flag,first_name,age,gender,txn_description,balance,amount,geometry,X,Y,merch_suburb,merch_state,merch_geometry,merch_X,merch_Y,coord_diff_km
+﻿timestamp,status,card_present_flag,first_name,age,gender,txn_description,balance,amount,geometry,X,Y,merch_suburb,merch_state,merch_geometry,merch_X,merch_Y,distance
 2018-08-01T01:01:15.000+0000,authorized,1,Diana,26,F,POS,35.39,16.25,153.41 -27.95,-27.95,153.41,Ashmore,QLD,153.38 -27.99,-27.99,153.38,5.34
 2018-08-01T01:13:45.000+0000,authorized,0,Diana,26,F,SALES-POS,21.2,14.19,153.41 -27.95,-27.95,153.41,Sydney,NSW,151.21 -33.87,-33.87,151.21,691.63
 2018-08-01T01:26:15.000+0000,authorized,1,Michael,38,M,POS,5.71,6.42,151.23 -33.94,-33.94,151.23,Sydney,NSW,151.21 -33.87,-33.87,151.21,8.01

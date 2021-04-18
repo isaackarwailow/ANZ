@@ -33,26 +33,26 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Data dictionary
 
-| Field Name       | Legal Values                                                   | Data Type | Field Size |
-|------------------|----------------------------------------------------------------|-----------|------------|
-| timestamp        | '%Y-%m-%d %H:%M:%S'                                            | datetime  | 64         |
-| date             | '%m/%d/%Y'                                                     | datetime  | 64         |
-| status           | authorized/ posted                                             | category  | N/A        |
+| Field Name        | Legal Values                                                   | Data Type | Field Size |
+|-------------------|----------------------------------------------------------------|-----------|------------|
+| timestamp         | '%Y-%m-%d %H:%M:%S'                                            | datetime  | 64         |
+| date              | '%m/%d/%Y'                                                     | datetime  | 64         |
+| status            | authorized/ posted                                             | category  | N/A        |
 | card_present_flag | 1, 0                                                           | category  | N/A        |
-| age              | years                                                          | int       | 32         |
-| gender           | M, F                                                           | category  | N/A        |
-| txn_description  | POS, SALES-POS, PAYMENT, INTER<br>BANK, PAY/SALARY, PHONE BANK | category  | N/A        |
-| balance          | numeric                                                        | float     | 64         |
-| amount           | numeric                                                        | float     | 64         |
-| geometry         | any                                                            | object    | N/A        |
-| X                | range: -90, 90                                                 | float     | 64         |
-| Y                | range: -180, 180                                               | float     | 64         |
-| merch_suburb     | any                                                            | object    | N/A        |
-| merch_state      | any                                                            | object    | N/A        |
-| merch_geometry   | any                                                            | object    | N/A        |
-| merch_X          | range: -90, 90                                                 | float     | 64         |
-| merch_Y          | range: -180, 180                                               | float     | 64         |
-| coord_diff_km    | kilometers                                                     | float     | 64         |
+| age               | years                                                          | int       | 32         |
+| gender            | M, F                                                           | category  | N/A        |
+| txn_description   | POS, SALES-POS, PAYMENT, INTER<br>BANK, PAY/SALARY, PHONE BANK | category  | N/A        |
+| balance           | numeric                                                        | float     | 64         |
+| amount            | numeric                                                        | float     | 64         |
+| geometry          | any                                                            | object    | N/A        |
+| X                 | range: -90, 90                                                 | float     | 64         |
+| Y                 | range: -180, 180                                               | float     | 64         |
+| merch_suburb      | any                                                            | object    | N/A        |
+| merch_state       | any                                                            | object    | N/A        |
+| merch_geometry    | any                                                            | object    | N/A        |
+| merch_X           | range: -90, 90                                                 | float     | 64         |
+| merch_Y           | range: -180, 180                                               | float     | 64         |
+| distance          | kilometers                                                     | float     | 64         |
 
 ## Preliminary Data Preperation using MS Excel
 
