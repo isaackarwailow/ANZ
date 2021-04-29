@@ -33,27 +33,29 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Data dictionary
 
-| Field Name        | Key / description   | Data Type | Description |
-|-------------------|---------------------|-----------|-------------|
-| timestamp         | '%Y-%m-%d %H:%M:%S' | datetime  | 64          |
-| date              | '%m/%d/%Y'          | datetime  | 64          |
-| status            | authorized/ posted  | category  | N/A         |
-| card_present_flag | 1, 0                | category  | N/A         |
-| age               | years               | int       | 32          |
-| gender            | M, F                | category  | N/A         |
-| txn_description   | type of transaction | category  | N/A         |
-| balance           | numeric             | float     | 64          |
-| amount            | numeric             | float     | 64          |
-| geometry          | any                 | object    | N/A         |
-| X                 | range: -90, 90      | float     | 64          |
-| Y                 | range: -180, 180    | float     | 64          |
-| merch_suburb      | any                 | object    | N/A         |
-| merch_state       | any                 | object    | N/A         |
-| merch_geometry    | any                 | object    | N/A         |
-| merch_X           | range: -90, 90      | float     | 64          |
-| merch_Y           | range: -180, 180    | float     | 64          |
-| distance          | kilometers          | float     | 64          |
-| country           | string              | object    | 64          |
+| Field Name        | Key / description   | Data Type | 
+|-------------------|---------------------|-----------|
+| timestamp         | '%Y-%m-%d %H:%M:%S' | datetime  |
+| date              | '%m/%d/%Y'          | datetime  |
+| status            | authorized/ posted  | category  |
+| card_present_flag | 1, 0                | category  |
+| account           | number              | object    |
+| first_name        | string              | object    |
+| age               | years               | int       |
+| gender            | M, F                | category  |
+| txn_description   | type of transaction | category  |
+| balance           | numeric             | float     |
+| amount            | numeric             | float     |
+| geometry          | any                 | object    |
+| X                 | range: -90, 90      | float     |
+| Y                 | range: -180, 180    | float     |
+| merch_suburb      | any                 | object    |
+| merch_state       | any                 | object    |
+| merch_geometry    | any                 | object    |
+| merch_X           | range: -90, 90      | float     |
+| merch_Y           | range: -180, 180    | float     |
+| distance          | kilometers          | float     |
+| country           | string              | object    |
 
 ## Preliminary Data Preperation using MS Excel
 
