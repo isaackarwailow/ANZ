@@ -33,13 +33,13 @@ The dataset is designed to simulate realistic transaction behaviours that are ob
 
 ## Data dictionary
 
-| Field Name        | Key / description   | Data Type | 
+| Field Name        | Key / description   | Data Type |
 |-------------------|---------------------|-----------|
 | timestamp         | '%Y-%m-%d %H:%M:%S' | datetime  |
 | date              | '%m/%d/%Y'          | datetime  |
 | status            | authorized/ posted  | category  |
 | card_present_flag | 1, 0                | category  |
-| account           | number              | object    |
+| account           | sequence of numbers | object    |
 | first_name        | string              | object    |
 | age               | years               | int       |
 | gender            | M, F                | category  |
@@ -63,7 +63,7 @@ It is important to note that the csv file loaded into the pandas library as a Da
 
 1. The `extraction` column can be used for time-indexing since it has a `pandas.DatetimeIndex` compatible format. Change the column heading from 'extraction' to 'timestamp' and `shift + drag` the column to index 0 or A1 in Excel. This would satisfy 1NF rules.
 
-2. Next, delete `bpay_biller_code, account, currency, merchant_id, merchant_code, first_name, date, transaction_id, country, customer_id, movement`. The reasoning behind these decisions are outlined briefly here:
+2. Next, delete `bpay_biller_code, currency, merchant_id, merchant_code, first_name, date, transaction_id, country, customer_id, movement`. The reasoning behind these decisions are outlined briefly here:
 
     * `date, transaction_id, merchant_id`: Column fields violate 2NF as the column is functionally dependent on the primary key. Since I want to parse timestamps as the index of my DataFrame these columns must be deleted
     * `currency, country`: Column fields are transitively dependent and contain non-unique rows. Therefore, 3NF is violated
