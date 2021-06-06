@@ -106,8 +106,8 @@ It is important to note that the csv file loaded into the pandas library as a Da
 
 | Model         | CV Search Flag | CV Search Type | Wall Time  |
 |---------------|----------------|----------------|------------|
-| Decision Tree | Yes            | Grid           | 1 min 27 s |
-| Random Forest | Yes            | Grid           | 2 min 20s  |
+| Decision Tree | Yes            | Grid           | 1min 27s |
+| Random Forest | Yes            | Grid           | 4min 34s |
 
 ### References
 
