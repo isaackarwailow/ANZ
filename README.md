@@ -85,3 +85,25 @@ It is important to note that the csv file loaded into the pandas library as a Da
    ```Excel
    = IF(merch_X=0,0,(3443.8985*1.852001*(ACOS((SIN(X*PI()/180)*SIN(merch_X*PI()/180)+COS(X*PI()/180)*COS(merch_X*PI()/180)*COS(merch_Y*PI()/180-Y*PI()/180))))))
    ```
+## Task 2 Questions:
+* For this task, you’ll likely need to use statistical software such as R, SAS, or Python.
+
+* Using the same transaction dataset, identify the annual salary for each customer
+
+* Explore correlations between annual salary and various customer attributes (e.g. age). These attributes could be those that are readily available in the data (e.g. age) or those that you construct or derive yourself (e.g. those relating to purchasing behaviour). Visualise any interesting correlations using a scatter plot.
+
+* Build a simple regression model to predict the annual salary for each customer using the attributes you identified above
+
+* How accurate is your model? Should ANZ use it to segment customers (for whom it does not have this data) into income brackets for reporting purposes?
+
+* For a challenge: build a decision-tree based model to predict salary. Does it perform better? How would you accurately test the performance of this model?
+
+## Appendix
+### Models and training times
+
+| Model      |CV Search Flag   | Wall Time |
+|-------------------|---------------------|-----------|
+Decision Tree (using GridSearchCV) = 1 min 27 s
+* Random Forests = 
+### References
+For feature engineering X and Y coordinates: https://bmanikan.medium.com/feature-engineering-all-i-learned-about-geo-spatial-features-649871d16796

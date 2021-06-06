@@ -9,3 +9,4 @@ Build a simple regression model to predict the annual salary for each customer u
 How accurate is your model? Should ANZ use it to segment customers (for whom it does not have this data) into income brackets for reporting purposes?
 
 For a challenge: build a decision-tree based model to predict salary. Does it perform better? How would you accurately test the performance of this model?
+
