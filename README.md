@@ -85,7 +85,9 @@ It is important to note that the csv file loaded into the pandas library as a Da
    ```Excel
    = IF(merch_X=0,0,(3443.8985*1.852001*(ACOS((SIN(X*PI()/180)*SIN(merch_X*PI()/180)+COS(X*PI()/180)*COS(merch_X*PI()/180)*COS(merch_Y*PI()/180-Y*PI()/180))))))
    ```
-## Task 2 Questions:
+
+## Task 2 Questions
+
 * For this task, you’ll likely need to use statistical software such as R, SAS, or Python.
 
 * Using the same transaction dataset, identify the annual salary for each customer
@@ -99,11 +101,16 @@ It is important to note that the csv file loaded into the pandas library as a Da
 * For a challenge: build a decision-tree based model to predict salary. Does it perform better? How would you accurately test the performance of this model?
 
 ## Appendix
+
 ### Models and training times
 
-| Model      |CV Search Flag   | Wall Time |
-|-------------------|---------------------|-----------|
-Decision Tree (using GridSearchCV) = 1 min 27 s
-* Random Forests = 
+| Model         | CV Search Flag | CV Search Type | Wall Time  |
+|---------------|----------------|----------------|------------|
+| Decision Tree | Yes            | Grid           | 1 min 27 s |
+| Random Forest | Yes            | Grid           | 2 min 20s  |
+
 ### References
-For feature engineering X and Y coordinates: https://bmanikan.medium.com/feature-engineering-all-i-learned-about-geo-spatial-features-649871d16796
+
+* For feature engineering X and Y coordinates: <https://bmanikan.medium.com/feature-engineering-all-i-learned-about-geo-spatial-features-649871d16796>
+* For tuning hyperparameters for Random Forest: https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+* 
