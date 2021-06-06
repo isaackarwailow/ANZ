@@ -107,10 +107,11 @@ It is important to note that the csv file loaded into the pandas library as a Da
 | Model         | CV Search Flag | CV Search Type | Wall Time  |
 |---------------|----------------|----------------|------------|
 | Decision Tree | Yes            | Grid           | 1min 27s |
-| Random Forest | Yes            | Grid           | 4min 34s |
+| Random Forest | Yes            | Grid           | 5min 32s |
 
 ### References
 
 * For feature engineering X and Y coordinates: <https://bmanikan.medium.com/feature-engineering-all-i-learned-about-geo-spatial-features-649871d16796>
 * For tuning hyperparameters for Random Forest: https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
-* 
+* On the use of the independence assumption in Naive Bayes as a bad idea for this dataset: https://link.springer.com/article/10.1023/A:1007670802811
+* On discretizing continuous data: https://web.ma.utexas.edu/users/mks/statmistakes/dividingcontinuousintocategories.html
